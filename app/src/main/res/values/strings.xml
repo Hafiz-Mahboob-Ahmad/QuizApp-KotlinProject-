@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="result">Result</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="mahboob">Mahboob</string>
+    <string name="trophy_image">Trophy Image</string>
+    <string name="your_score_is_9_out_0f_10">Your score is 9 out 0f 10</string>
+    <string name="quiz_app">Quiz App!</string>
+    <string name="welcome">Welcome</string>
+    <string name="please_enter_your_name">Please enter your name</string>
+    <string name="start">START</string>
+    <string name="finish">FINISH</string>
+    <string name="name">Name</string>
+    <string name="quiz_image">Quiz Image</string>
+    <string name="_0_9">0/9</string>
+    <string name="apple">Apple</string>
+    <string name="option_1">option-1</string>
+    <string name="option_2">option-2</string>
+    <string name="option_3">option-3</string>
+    <string name="option_4">option-4</string>
+    <string name="submit">Submit</string>
+</resources>

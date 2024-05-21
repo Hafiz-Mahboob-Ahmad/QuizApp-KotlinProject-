@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".QuizQuestionsActivity2">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+
+        <TextView
+            android:id="@+id/tv_heading_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:textColor="@color/dark_gray"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Which country does this flag belong to?" />
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/quiz_image"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="@id/tv_heading_question"
+            app:layout_constraintStart_toStartOf="@id/tv_heading_question"
+            app:layout_constraintTop_toBottomOf="@id/tv_heading_question"
+            tools:src="@drawable/belgium4_flag" />
+
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:indeterminate="false"
+            android:max="9"
+            android:minHeight="50dp"
+            android:progress="0"
+            app:layout_constraintEnd_toStartOf="@+id/tv_questions_counter"
+            app:layout_constraintStart_toStartOf="@id/tv_heading_question"
+            app:layout_constraintTop_toBottomOf="@id/iv_image" />
+
+        <TextView
+            android:id="@+id/tv_questions_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:paddingEnd="0dp"
+            android:text="@string/_0_9"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/tv_heading_question"
+            app:layout_constraintTop_toTopOf="@id/progress_bar"
+            app:layout_constraintBottom_toBottomOf="@id/progress_bar"/>
+
+
+        <TextView
+            android:id="@+id/tv_option_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/default_option_border_bg"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="@string/option_1"
+            android:textColor="@color/medium_gray"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@id/tv_heading_question"
+            app:layout_constraintStart_toStartOf="@id/tv_heading_question"
+            app:layout_constraintTop_toBottomOf="@id/progress_bar" />
+
+        <TextView
+            android:id="@+id/tv_option_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/default_option_border_bg"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="@color/medium_gray"
+            android:text="@string/option_2"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@id/tv_heading_question"
+            app:layout_constraintStart_toStartOf="@id/tv_heading_question"
+            app:layout_constraintTop_toBottomOf="@id/tv_option_one" />
+
+        <TextView
+            android:id="@+id/tv_option_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/default_option_border_bg"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="@string/option_3"
+            android:textColor="@color/medium_gray"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@id/tv_heading_question"
+            app:layout_constraintStart_toStartOf="@id/tv_heading_question"
+            app:layout_constraintTop_toBottomOf="@id/tv_option_two" />
+
+        <TextView
+            android:id="@+id/tv_option_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/default_option_border_bg"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="@string/option_4"
+            android:textColor="@color/medium_gray"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@id/tv_heading_question"
+            app:layout_constraintStart_toStartOf="@id/tv_heading_question"
+            app:layout_constraintTop_toBottomOf="@id/tv_option_three" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/design_default_color_primary"
+            android:text="@string/submit"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/tv_heading_question"
+            app:layout_constraintStart_toStartOf="@id/tv_heading_question"
+            app:layout_constraintTop_toBottomOf="@id/tv_option_four" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
